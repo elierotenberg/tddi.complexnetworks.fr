@@ -66,19 +66,19 @@ If you want tech demos of me, please feel free to reach me: elie@rotenberg.io
                   <table class="table">
                     <tr>
                       <td><a href="mailto:Matthieu.Latapy@Lip6.fr">Matthieu&nbsp;Latapy</a></td>
-                      <td><small>LIP6 – CNRS and UPMC (University Pierre and Marie Curie – Paris 6), 104 avenue du Président Kennedy, 75016 Paris, France.</small></td>
+                      <td><small>Sorbonne Universités, UPMC Univ Paris 06, LIP6 UMR 7606, 4 place Jussieu 75005 Paris</small></td>
                     </tr>
                     <tr>
                       <td><a href="mailto:elie@rotenberg.io">Elie&nbsp;Rotenberg</a></td>
-                      <td><small>LIP6 – CNRS and UPMC (University Pierre and Marie Curie – Paris 6), 104 avenue du Président Kennedy, 75016 Paris, France. LIP – CNRS and University Lyon 1.</small></td>
+                      <td><small>Sorbonne Universités, UPMC Univ Paris 06, LIP6 UMR 7606, 4 place Jussieu 75005 Paris</small></td>
                     </tr>
                     <tr>
                       <td><a href="mailto:christophe.crespelle@inria.fr">Christophe&nbsp;Crespelle</a></td>
-                      <td><small>LIP – CNRS and University Lyon 1.</small></td>
+                      <td><small>Université Claude Bernard Lyon 1, DANTE/INRIA, LIP UMR CNRRS 5668, ENS de Lyon, Université de Lyon</small></td>
                     </tr>
                     <tr>
                       <td><a href="mailto:Fabien.Tarissan@Lip6.fr">Fabien&nbsp;Tarissan</a></td>
-                      <td><small>LIP6 – CNRS and UPMC (University Pierre and Marie Curie – Paris 6), 104 avenue du Président Kennedy, 75016 Paris, France.</small></td>
+                      <td><small>Sorbonne Universités, UPMC Univ Paris 06, LIP6 UMR 7606, 4 place Jussieu 75005 Paris</small></td>
                     </tr>
                   </table>
                 </div>
@@ -231,7 +231,43 @@ If you want tech demos of me, please feel free to reach me: elie@rotenberg.io
 
           <section class="panel panel-default" id="datasets">
             <div class="panel-heading"><div class="panel-title">Datasets</div></div>
-            <div class="panel-body"></div>
+            <div class="panel-body">
+              <div class="row">
+                <div class="col-md-2">
+                  <h4>Description</h4>
+                </div>
+                <div class="col-md-10">
+                  <p>Each file contains the aggregated results of running UDP Ping againsts a list of target IPv4 addresses.</p>
+                  <p>Each line in the ASCII-encoded text file has format contains <code>$monitor $interface $target</code>, where <code>$monitor</code> is a PlanetLab monitor hostname, and <code>$interface</code> and <code>$target</code> are two dotted-decimal IPv4 addresses.</p>
+                  <p>Such a line represents the fact that <code>$monitor</code> has recorded a response to its probe targetted at <code>$target</code>, with origin address <code>$interface</code>.</p>
+                  <p>As explained in the paper, this usually means that the response probe was sent by <code>$target</code> using its interface <code>$interface</code>, therefore allowing us to conclude that <code>$interface</code> belongs to the same IPv4 host than <code>$target</code>.</p>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-md-2">
+                  <h4>Raw datasets</h4>
+                </div>
+                <div class="col-md-10">
+                  <table class="table">
+                    <tr>
+                      <td><a href="http://data.complexnetworks.fr/udpping_data/M1.gz"><code>M1.gz</code></a></td>
+                      <td>Measurement set 1</td>
+                      <td>8.6GB (gzipped)</td>
+                    </tr>
+                    <tr>
+                      <td><a href="http://data.complexnetworks.fr/udpping_data/M2.gz"><code>M2.gz</code></a></td>
+                      <td>Measurement set 2</td>
+                      <td>8.7GB (gzipped</td>
+                    </tr>
+                    <tr>
+                      <td><a href="http://data.complexnetworks.fr/udpping_data/M3.gz"><code>M3.gz</code></a></td>
+                      <td>Measurement set 3</td>
+                      <td>8.5GB (gzipped)</td>
+                    </tr>
+                  </table>
+                </div>
+              </div>
+            </div>
           </section>
 
         </main>
